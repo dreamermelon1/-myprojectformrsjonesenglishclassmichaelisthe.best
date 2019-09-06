@@ -1,11 +1,94 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title> I am the best </title>
-  </head>
-  <body>
-    <h1> My project will be here </h1>
-    <center>
-      <p> Maybe one day... </p>
-    </center>
-  </body>
-</html>  
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+<link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+body {
+margin: 0; 
+background-color: black;
+}
+.content {
+background-color: black;
+color: #20C20E;
+}
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #555;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family: 'Abel', sans-serif;
+}
+
+ul.sidenav li a {
+  display: block;
+  color: #20C20E;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+}
+ 
+ul.sidenav li a.active {
+  background-color: #100da3;
+  color: #407d42;
+  font-family: 'Abel', sans-serif;
+}
+
+ul.sidenav li a:hover:not(.active) {
+  background-color: white;
+  color: #20C20E;
+  font-family: 'Abel', sans-serif;
+}
+
+div.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<ul class="sidenav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="/blog1.html">Blog 1</a></li>
+  <li><a href="/blog2.html">Blog 2</a></li>
+  <li><a href="/blog3.html">Blog 3</a></li>
+</ul>
+
+<div class="content">
+  <h2>This is a project I've worked very hard on and I hope I get a good grade because this website costed me like 3 dollars.</h2>
+  <p>If you love me Mrs. Jones, you'll give me a good grade <3 I also coded this website so :)</p>
+  <p>Hope you like it.</p>
+  <p>:))))</p>
+  <h3>Happy reading!</h3>
+</div>
+
+</body>
+</html>
